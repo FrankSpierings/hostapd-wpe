@@ -16,7 +16,7 @@ name_opt		= ca_default
 cert_opt		= ca_default
 default_days		= 365
 default_crl_days	= 30
-default_md		= md5
+default_md		= sha256
 preserve		= no
 policy			= policy_match
 
@@ -40,7 +40,7 @@ emailAddress		= optional
 [ req ]
 prompt			= no
 distinguished_name	= certificate_authority
-default_bits		= 2048
+default_bits		= 4096
 input_password		= whatever
 output_password		= whatever
 x509_extensions		= v3_ca
